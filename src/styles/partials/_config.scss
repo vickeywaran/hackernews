@@ -1,0 +1,85 @@
+// fonts
+$font-family-fallback: 'Arial', sans-serif;
+$font-family-primary: 'Source Sans Pro', $font-family-fallback;
+$font-family-secondary: 'Noto Serif', $font-family-primary, $font-family-fallback;
+$default-font-size: 16px;
+
+$head: (
+  h1: $default-font-size + 12px,
+  h2: $default-font-size + 6px,
+  h3: $default-font-size + 2px,
+  h4: $default-font-size
+);
+
+// colors
+$gruvbox-palette: (
+  gruvbox-dark0_hard:             #1d2021,
+  gruvbox-dark0:                  #282828,
+  gruvbox-dark0_soft:             #32302f,
+  gruvbox-dark1:                  #3c3836,
+  gruvbox-dark2:                  #504945,
+  gruvbox-dark3:                  #665c54,
+  gruvbox-dark4:                  #7c6f64,
+  gruvbox-gray:                   #928374,
+  gruvbox-light0_hard:            #ffffc8,
+  gruvbox-light0:                 #fdf4c1,
+  gruvbox-light0_soft:            #f4e8ba,
+  gruvbox-light1:                 #ebdbb2,
+  gruvbox-light2:                 #d5c4a1,
+  gruvbox-light3:                 #bdae93,
+  gruvbox-light4:                 #a89984,
+  gruvbox-bright_red:             #fb4933,
+  gruvbox-bright_green:           #b8bb26,
+  gruvbox-bright_yellow:          #fabd2f,
+  gruvbox-bright_blue:            #83a598,
+  gruvbox-bright_purple:          #d3869b,
+  gruvbox-bright_aqua:            #8ec07c,
+  gruvbox-bright_orange:          #fe8019,
+  gruvbox-neutral_red:            #fb4934,
+  gruvbox-neutral_green:          #b8bb26,
+  gruvbox-neutral_yellow:         #fabd2f,
+  gruvbox-neutral_blue:           #83a598,
+  gruvbox-neutral_purple:         #d3869b,
+  gruvbox-neutral_aqua:           #8ec07c,
+  gruvbox-neutral_orange:         #fe8019,
+  gruvbox-faded_red:              #9d0006,
+  gruvbox-faded_green:            #79740e,
+  gruvbox-faded_yellow:           #b57614,
+  gruvbox-faded_blue:             #076678,
+  gruvbox-faded_purple:           #8f3f71,
+  gruvbox-faded_aqua:             #427b58,
+  gruvbox-faded_orange:           #af3a03,
+  gruvbox-dark_red:               #421E1E,
+  gruvbox-dark_blue:              #2B3C44,
+  gruvbox-dark_aqua:              #36473A,
+  gruvbox-delimiter-one:          #458588,
+  gruvbox-delimiter-two:          #b16286,
+  gruvbox-delimiter-three:        #8ec07c,
+  gruvbox-delimiter-four:         #d65d0e,
+  gruvbox-white:                  #FFFFFF,
+  gruvbox-black:                  #000000,
+  gruvbox-sienna:                 #DD6F48,
+  gruvbox-darkslategray4:         #528B8B,
+  gruvbox-lightblue4:             #66999D,
+  gruvbox-burlywood4:             #BBAA97,
+  gruvbox-aquamarine4:            #83A598,
+  gruvbox-turquoise4:             #61ACBB,
+);
+
+$white: #FFFFFF;
+$black: #000000;
+
+$primary-dark: map-get($gruvbox-palette, gruvbox-dark0_hard);
+$secondary-dark: map-get($gruvbox-palette, gruvbox-dark0);
+$secondary-light: map-get($gruvbox-palette, gruvbox-dark0_soft);
+$text-color: map-get($gruvbox-palette, gruvbox-light0);
+$text-color-dark: map-get($gruvbox-palette, gruvbox-light4);
+$link-color: map-get($gruvbox-palette, gruvbox-neutral_aqua);
+$info-color: map-get($gruvbox-palette, gruvbox-light4);
+$title-color: map-get($gruvbox-palette, gruvbox-bright_yellow);
+
+//Breakpoints
+$sm-device: 540px;
+$md-device: 720px;
+$lg-device: 960px;
+$xl-device: 1400px;

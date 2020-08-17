@@ -1,0 +1,28 @@
+.comment-wrapper {
+  background-color: $secondary-dark;
+  color: $text-color;
+  padding: 30px;
+  border-radius: 6px;
+  margin: 30px 0;
+
+  .comment-wrapper {
+    margin: 0;
+    border-radius: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    border-left: 2px solid $secondary-light;
+
+    &:hover {
+      border-left: 2px solid $link-color;
+    }
+  }
+}
+
+.comment {
+  @extend .wrap-text;
+  line-height: 1.5;
+
+  @include e(description) {
+    margin-bottom: 15px;
+  }
+}

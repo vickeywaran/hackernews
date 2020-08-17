@@ -1,0 +1,36 @@
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -$lg-device 0;
+  }
+  100% {
+    background-position: $lg-device 0;
+  }
+}
+
+.loading-heading-bg {
+  background: linear-gradient(to right, darken($link-color, 30%) 10%, $link-color 20%, darken($link-color, 30%) 40%);
+}
+
+.loading-description-bg {
+  background: linear-gradient(to right, darken($text-color, 30%) 10%, $text-color 20%, darken($text-color, 30%) 40%);
+}
+
+.loading-animation {
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  position: relative;
+}
+
+.wrap-text {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}

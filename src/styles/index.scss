@@ -1,0 +1,120 @@
+@import "./partials/config";
+@import "./partials/mixins";
+@import "./partials/reset";
+@import "./partials/helpers";
+
+@import "../Component/List/List.scss";
+@import "../Component/Story/Story.scss";
+@import "../Component/Comment/Comment.scss";
+
+.container {
+  padding: 0 15px;
+  max-width: 100%;
+  margin: 0 auto;
+
+  @include mq(md) {
+    max-width: $md-device;
+  }
+
+  @include mq(lg) {
+    max-width: $lg-device;
+  }
+
+  @include mq(xl) {
+    max-width: $xl-device;
+    padding: 0 200px;
+  }
+}
+
+.clearfix {
+  &:after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+}
+
+.detail-actions {
+  margin-top: 30px;
+}
+
+.btn {
+  background-color: $secondary-dark;
+  border: 1px solid $secondary-dark;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-family: $font-family-primary;
+  font-size: $default-font-size;
+  color: $text-color-dark;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:enabled {
+    &:hover {
+      background-color: $secondary-light;
+      color: $text-color;
+    }
+
+    &:active {
+      background-color: darken($primary-dark, 1%);
+      color: $text-color;
+    }
+  }
+
+  &:disabled {
+    cursor: auto;
+  }
+}
+
+.loading-bar {
+  opacity: 0.1;
+  width: 100%;
+  margin: 50px 0;
+
+  @include e(heading) {
+    height: 30px;
+    width: 100%;
+    margin: 20px 0;
+    background-color: darken($link-color, 40%);
+    @extend .loading-animation;
+    @extend .loading-heading-bg;
+  }
+
+  @include e(description) {
+    height: 20px;
+    width: 100%;
+    background-color: darken($text-color-dark, 40%);
+    @extend .loading-animation;
+    @extend .loading-description-bg;
+  }
+}
+
+main {
+  padding-bottom: 40px;
+}
+
+.header {
+  padding: 30px 0;
+
+  h1 {
+    a {
+      color: $title-color;
+      text-decoration: none;
+    }
+  }
+}
+
+.footer {
+  padding: 60px 0;
+
+  @include e(text) {
+    color: $text-color-dark;
+  }
+}
+
+.error-message {
+  color: $text-color-dark;
+}

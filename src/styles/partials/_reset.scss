@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family-primary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $primary-dark;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-family-secondary;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: map-get($head, h1);
+}
+h2 {
+  font-size: map-get($head, h2);
+}
+h3 {
+  font-size: map-get($head, h3);
+}
+h4 {
+  font-size: map-get($head, h4);
+}
+
+a {
+  color: $link-color;
+}
